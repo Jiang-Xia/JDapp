@@ -1,0 +1,44 @@
+:root {
+  --color-text: var(--van-text-color, #323233);
+  --color-background-2: var(--van-background-2, #fff);
+  --color-block-background: var(--van-border-color, #ebedf0);
+  --m-primary: #ff5913;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--van-text-color);
+  background-color: var(--color-background-2);
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family:
+    Helvetica Neue,
+    Helvetica,
+    PingFang SC,
+    Hiragino Sans GB,
+    Microsoft YaHei,
+    Arial,
+    sans-serif;
+}
+
+/* 修改vant css变量 */
+:root:root {
+  /* --van-button-primary-background: #f0421c; */
+  --van-button-primary-background: #ff5913;
+
+  --van-nav-bar-icon-color: #000;
+  /* --van-nav-bar-title-font-size: 19px; */
+  --van-nav-bar-title-text-color: #000;
+  --van-uploader-border-radius: 6px;
+  --van-uploader-size: 140px;
+}

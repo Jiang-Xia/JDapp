@@ -1,0 +1,38 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+  min-height: 100vh;
+  background-color: #eff2f5;
+}
+
+.m-primary {
+  color: var(--van-red);
+}
+.page-container {
+  background-color: #eff2f5;
+}
+.page-header {
+  margin: var(--van-cell-group-inset-padding);
+  border-radius: var(--van-cell-group-inset-radius);
+  padding: var(--van-cell-vertical-padding) var(--van-cell-horizontal-padding);
+  background-color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    min-width: 4px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: var(--m-primary);
+    margin-right: 4px;
+  }
+}
